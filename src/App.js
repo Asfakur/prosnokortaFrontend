@@ -15,6 +15,7 @@ import StudentDashboard from './components/dashboard/student/studentDashboard';
 import LoginForm from './components/auth/loginForm';
 import Logout from './components/auth/logOut';
 import RegistrationForm from './components/auth/registrationForm';
+import PrivateRoute from './components/auth/privateRoute';
 
 
 function App() {
@@ -43,13 +44,13 @@ function App() {
             <Logout />
           </Route>
 
-          <Route path="/author">
+          <PrivateRoute path="/author">
             <AuthorDashboard />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/student">
+          <PrivateRoute path="/student">
             <StudentDashboard />
-          </Route>
+          </PrivateRoute>
 
           <Route path="/">
             <NotFound />

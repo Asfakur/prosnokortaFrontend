@@ -96,7 +96,7 @@ function GiveExam(props) {
     }
 
 
-    if (!setId || !examId) return <Redirect to="not-found" />
+    if (!setId || !examId) return <Redirect to="/student/joinset" />
 
     return (
         <div>
