@@ -8,16 +8,7 @@ function QuestionBoard({ question, onAnswer, seen }) {
 
 
     let isAnswered = seen.isAnswered
-    // let isAnswered = _.get(seen, 'inAnswered')
 
-    // const [isAnswered, setIsAnswered] =  useState(seen.isAnswered)
-    // useEffect(() => {
-    //     setIsAnswered()
-    // }, [setId]);
-
-    // useEffect(() => {
-    //     // document.title = `You clicked ${count} times`;
-    // });
 
     const renderClassName = (answer) => {
         if (isAnswered) {

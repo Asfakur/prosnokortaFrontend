@@ -65,10 +65,14 @@ function GiveExam(props) {
 
         seens[index] = newAnswerObj
         setSeenQuestions(seens)
+        // -------------
+        // isCorrect()
 
         if (selected === details.answer) {
             setCorrected(corrected + 1)
         }
+
+        // ------------------
 
     }
     const sumbitFullAnswer = async () => {
@@ -86,7 +90,7 @@ function GiveExam(props) {
             }
         }
         else{
-            alert('You have already Given the exam before, socre will not change')
+            alert('You have already Given the exam before, score will not change')
         }
 
         history.replace("/student/participated");
